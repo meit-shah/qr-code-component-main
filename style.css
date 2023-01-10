@@ -1,0 +1,75 @@
+/* Variables and Resets */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* color variables */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-gray: hsl(212, 45%, 89%);
+    --clr-grayish-blue: hsl(220, 15%, 55%);
+    --clr-dark-blue: hsl(218, 44%, 22%);
+
+    /* font family variables */
+    --ff: 'Outfit', 'sans-serif';
+    --fs-title: 20px;
+    --ff-para: 15px;
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+/* Main css starts here */
+
+body {
+    font-family: var(--ff);
+    background: var(--clr-light-gray);
+}
+
+.flex-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 1rem;
+}
+
+.barcode {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.card {
+    padding: 1.5rem;
+    justify-self: center;
+    align-self: center;
+    background: var(--clr-white);
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0px 8px 20px 10px hsla(220, 15%, 55%, 0.1);
+    width: 330px;
+}
+
+.title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 1rem;
+    color: var(--clr-dark-blue);
+}
+
+.paragraph {
+    font-size: 1rem;
+    margin: 1rem;
+    color: var(--clr-grayish-blue);
+}
+
+.attribution {
+    color: var(--clr-dark-blue);
+    width: 330px;
+    text-align: center;
+    font-size: 0.75rem;
+}
